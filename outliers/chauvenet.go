@@ -1,8 +1,8 @@
 package outliers
 
 import (
-	"math"
 	"github.com/pavelerokhin/gostatistics/basics"
+	"math"
 )
 
 func ChauvenetFilter(data []float64) []float64 {
@@ -33,7 +33,6 @@ func chauvenetStep(data []float64) []float64 {
 			output = append(output, value)
 		}
 	}
-
 
 	return output
 }
